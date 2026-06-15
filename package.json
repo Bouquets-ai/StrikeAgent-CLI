@@ -1,0 +1,61 @@
+{
+  "name": "strikeagent-cli",
+  "version": "0.1.0",
+  "description": "StrikeAgent-CLI — 一个可实际运行的命令行 AI 编程助手，支持 DeepSeek 1M 上下文与 Ollama，强化上下文管理/工具调用/自进化记忆，内置命令行宠物与飞书远程操控。",
+  "type": "module",
+  "bin": {
+    "strike": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist",
+    "README.md",
+    ".env.example"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.tsx",
+    "build": "tsup",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai",
+    "cli",
+    "agent",
+    "deepseek",
+    "ollama",
+    "coding-assistant"
+  ],
+  "author": "Bouquets-ai",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "_origin": "Bouquets-ai",
+  "_signature": "BQT-AI::origin=Bouquets-ai::sig=7f3a91c4",
+  "_notice": "本项目由 Bouquets-ai 原创开发，含溯源水印，未经授权禁止商业使用。",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@larksuiteoapi/node-sdk": "^1.45.0",
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "@vscode/ripgrep": "^1.15.9",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "fast-glob": "^3.3.2",
+    "ink": "^5.0.1",
+    "ink-text-input": "^6.0.0",
+    "openai": "^4.77.0",
+    "react": "^18.3.1",
+    "yaml": "^2.6.1",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
