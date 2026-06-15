@@ -397,14 +397,10 @@ src/
 
 | 维度 | StrikeAgent-CLI |
 | --- | --- |
-| 模型后端 | 一等公民支持 DeepSeek 1M + Ollama，`/model` 热切换 |
+| 模型后端 | 支持 DeepSeek 1M + Ollama，`/model` 热切换 |
 | 自进化记忆 | 任务后反思 → JSONL 经验库 → 关键词+中文2gram+向量三路召回 |
 | 命令行宠物 | 盲盒孵化像素宠物，随 Agent 状态变情绪 |
 | 飞书远程 | 手机发消息驱动本机 CLI，无需公网回调 |
-| `/rewind` | 对话 + 代码同步回滚 |
-| 消息队列 | 运行中可继续输入，顺序处理 |
-| 思考控制 | 默认始终思考，强度 high/max 两档（可 off），全局 `~/.strike/config.json` 可配 |
-| 技能生态 | 统一目录约定 `~/.strike/skills`、`~/.strike/agents`，开箱自动生成脚手架 |
 
 ---
 
